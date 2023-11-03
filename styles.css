@@ -1,0 +1,92 @@
+body{
+    background-color: #262626;
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+h1{
+    color: white;
+    font-family: "Cedarville Cursive";
+    overflow-wrap: break-word;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+h2{
+    color: white;
+    font-family: "Cedarville Cursive";
+    font-size: 3.5rem;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+h4{
+    color: white;
+    font-family: "Cedarville Cursive";
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+p{
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+    overflow-wrap: break-word;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: auto;
+    text-align: left;
+}
+
+hr{
+    color: #B3B3B3;
+    width: 75%;
+}
+
+img{
+    width: 70%;
+    padding: 2rem;
+}
+
+footer{
+    position: relative;
+    padding-top: 5rem;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.about{
+    width: 30%;
+    margin: auto;
+}
+
+.socials{
+    font-family: "Chakra Petch";
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    gap: 20%;
+    align-items: center;
+    justify-content: left;
+}
+
+.member-socials{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: pink;
+}

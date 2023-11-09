@@ -1,3 +1,26 @@
+
+
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'Tiltortion';
+    src: url('Tiltortion.woff2') format('woff2'),
+        url('Tiltortion.woff') format('woff');
+    src: url('https://achundur.github.io/travelingsketchbook/webfonts-tiltortion/Tiltortion.woff2') format('woff2'),
+        url('https://achundur.github.io/travelingsketchbook/webfonts-tiltortion/Tiltortion.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/*  */
+
+
+
+
 body{
     background-color: #262626;
     min-height: 100vh;
@@ -9,7 +32,7 @@ body{
 
 h1{
     color: white;
-    font-family: "Cedarville Cursive";
+    font-family: "Tiltortion";
     overflow-wrap: break-word;
     font-size: 4rem;
     font-weight: 300;
@@ -17,7 +40,7 @@ h1{
 
 h2{
     color: white;
-    font-family: "Cedarville Cursive";
+    font-family: "Tiltortion";
     font-size: 3.5rem;
     font-weight: 300;
     white-space: nowrap;
@@ -25,7 +48,7 @@ h2{
 
 h4{
     color: white;
-    font-family: "Cedarville Cursive";
+    font-family: "Tiltortion";
     font-size: 1.5rem;
     font-weight: 300;
 }
@@ -34,7 +57,7 @@ p{
     color: white;
     font-family: "Chakra Petch", sans-serif;
     overflow-wrap: break-word;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin: auto;
     text-align: left;
@@ -58,13 +81,13 @@ footer{
 }
 
 .about{
-    width: 30%;
+    width: 40%;
     margin: auto;
 }
 
 .socials{
     font-family: "Chakra Petch";
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: row;
     padding-top: 2rem;

@@ -12,14 +12,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chakra+Petch:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="travelingsketchbook.js" type="text/javascript"></script>
+
+
 </head>
 <body>
+    
     <main>
-        <!-- <h1>A traveling sketchbook by Adhiti and Eileen</h1>
-        <hr> -->
+
         <!-- Beginning of Marquee -->
         <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
+                <span><h1>A traveling sketchbook</h1></span>
+                <span><h1>A traveling sketchbook</h1></span>
                 <span><h1>A traveling sketchbook</h1></span>
                 <span><h1>A traveling sketchbook</h1></span>
                 <span><h1>A traveling sketchbook</h1></span>
@@ -28,17 +36,137 @@
         <!-- End of Marquee -->
 
 
+        <!-- Images -->
+        <div class="row h-100 flex-wrap">
+            <div class="col-md-6">
+                <img src="images/1.png" onclick="openModal();currentSlide(1)" class="img-fluid sketchbook-page hover-shadow">
+            </div>
+            <div class="col-md-6">
+                <img src="images/2.png" onclick="openModal();currentSlide(2)" class="img-fluid sketchbook-page hover-shadow">
+            </div>
 
-        <img src="images/adhiti_sketchbook_test.png" alt="adhiti's sketchbook page">
-        <img src="images/adhiti_sketchbook_test2.png" alt="adhiti's sketchbook page test 2">
-        <img src="images/eileen_sketchbook_test.png" alt="eileen's sketchbook page">
-        <img src="images/eileen_sketchbook_test2.png" alt="eileen's sketchbook page test 2">
+        </div>
+
+        <div class="row h-100 flex-wrap">
+            <div class="col-md-6">
+                <img src="images/3.png" onclick="openModal();currentSlide(3)" class="img-fluid sketchbook-page hover-shadow">
+            </div>
+            <div class="col-md-6">
+                <img src="images/4.png" onclick="openModal();currentSlide(4)" class="img-fluid sketchbook-page hover-shadow">
+            </div>
+
+        </div>
+
+        <div class="row h-100 flex-wrap">
+            <div class="col-md-6">
+                <img src="images/Eileen_vol3_1.png" onclick="openModal();currentSlide(5)" class="img-fluid sketchbook-page hover-shadow">
+            </div>
+            <div class="col-md-6">
+                <img src="images/Eileen_vol3_2.png" onclick="openModal();currentSlide(6)" class="img-fluid sketchbook-page hover-shadow">
+            </div>
+
+        </div>
+
+        <div class="row h-100 flex-wrap">
+            <div class="col-md-6">
+                <img src="images/Eileen_vol3_3.png" onclick="openModal();currentSlide(7)" class="img-fluid sketchbook-page hover-shadow">
+            </div>
+            <div class="col-md-6">
+                <img src="images/eileen_sketchbook_test.png" onclick="openModal();currentSlide(8)" class="img-fluid sketchbook-page hover-shadow">
+            </div>
+
+        </div>
+        
+
+
+       <!-- The Modal/Lightbox -->
+         <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/1.png" style="width:80%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/2.png" style="width:80%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/3.png" style="width:80%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/4.png" style="width:80%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/Eileen_vol3_1.png" style="width:80%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/Eileen_vol3_2.png" style="width:80%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/Eileen_vol3_3.png" style="width:80%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/eileen_sketchbook_test.png" style="width:80%">
+            </div>
+
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+    
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" style="width:40%" src="images/1_thumbnail.png" onclick="currentSlide(1)" alt="Don't Look">
+            </div>
+        
+            <div class="column">
+                <img class="demo" style="width:40%" src="images/2_thumbnail.png" onclick="currentSlide(2)" alt="Sword">
+            </div>
+        
+            <div class="column">
+                <img class="demo" style="width:40%" src="images/3_thumbnail.png" onclick="currentSlide(3)" alt="Face">
+            </div>
+        
+            <div class="column">
+                <img class="demo" style="width:40%" src="images/4_thumbnail.png" onclick="currentSlide(4)" alt="Knives">
+            </div>
+            </div>
+        </div>
+
+  <!-- End Lightbox -->
+        
+        <!-- About Section -->
+        
         <hr>
+
         <div class="about">
             <h2> More about this project </h2>
-            <p> Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod. 
+            <p> 
+                Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod. 
             Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod. 
-            Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod.  </p>
+            Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod.  
+            </p>
+
         <div class="socials">
             <div class="member-socials">
                 <p class="links"> Eileen </p>

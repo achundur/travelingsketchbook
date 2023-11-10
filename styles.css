@@ -4,27 +4,29 @@
 
 
 /* Custom Fonts */
-/* @font-face {
+@font-face {
     font-family: 'Tiltortion';
     src: url('Tiltortion.woff2') format('woff2'),
          url('Tiltortion.woff') format('woff');
+    src: url('webfont-tiltortion/Tiltortion.woff2') format('woff2'),
+         url('webfont-tiltortion/Tiltortion.woff') format('woff');
     src: url('https://achundur.github.io/travelingsketchbook/webfonts-tiltortion/Tiltortion.woff2') format('woff2'),
          url('https://achundur.github.io/travelingsketchbook/webfonts-tiltortion/Tiltortion.woff') format('woff');
 
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-} */
+}
 
 
-@font-face {
+/* @font-face {
     font-family: 'Tiltortion';
     src: url('webfont-tiltortion/Tiltortion.woff2') format('woff2'),
          url('webfont-tiltortion/Tiltortion.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 
 

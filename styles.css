@@ -99,9 +99,16 @@ img{
 }
 
 .sketchbook-page{
-    width: 75%;
+    width: 85%;
     flex-direction: column;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
   /* Create two equal columns that sits next to each other */
   .column {
@@ -178,7 +185,7 @@ a:hover{
 
 .marquee span {
     font-size: 10vw;
-    padding: 0 3vw;
+    padding: 2rem;
 }
 
 .marquee:hover .marquee__inner {

@@ -17,14 +17,14 @@
 }
 
 
-/* @font-face {
+@font-face {
     font-family: 'Tiltortion';
     src: url('Tiltortion.woff2') format('woff2'),
-        url('Tiltortion.woff') format('woff');
+         url('Tiltortion.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-} */
+}
 
 
 
@@ -87,11 +87,50 @@ p{
     text-align: left;
 }
 
+.current-location{
+    /* font-size: 2.5rem;
+    font-family: "Tiltortion"; */
+    text-align:center;
+}
+
 hr{
     color: #dfdfdf;
     width: 100%;
 }
 
+
+.map-text{
+    margin: bottom -10px;
+    align-items: center;
+}
+
+/* BREAKPOINTS FOR HEADINGS */
+
+@media (max-width: 770px){
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+      font-size: 36px;
+    }
+
+  }
+  
+  @media (min-width: 771px) and (max-width: 992px){
+      h1{
+          font-size: 4.5rem;
+      }
+
+      h2{
+        font-size: 2.5rem
+      }
+      /* h3{
+        font-size:1.4rem
+      } */
+  }
+  
+
+  
 /* Images */
 img{
     /* width: 70%; */
@@ -119,6 +158,20 @@ img{
 
   }
 
+  .current-location-container{
+    background-color:black;
+    border-radius: 1rem;
+    /* width:85%; */
+    margin: 10px 10px;
+  }
+
+  .avatar{
+    padding:5px 20px;
+  }
+
+  .map{
+    margin: auto;
+  }
 /* Images end */
 
 footer{
@@ -163,6 +216,15 @@ a:hover{
     color: pink;
 }
 
+
+@media screen and (max-width: 768px){
+    .map{
+        flex-direction: column-reverse; 
+    }
+    .filler{
+        display:none;
+    }
+}
 
 /* Text Marquee Styling */
 .marquee {
@@ -339,3 +401,59 @@ a:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 /*  */
+
+
+
+/* round text animation */
+
+
+  .rounded-text {
+    width: 25.625rem;
+    height: 25.625rem;
+    text-transform: uppercase;
+    transform: rotate(-103deg);
+    color: #fff;
+    font-weight: bold;
+    z-index: -1;
+    font-family: Raleway;
+  }
+  .white {
+    fill: #fff;
+  }
+  .yellow {
+    fill: #ffda2a;
+  }
+  .green {
+    fill: #00d3b9;
+  }
+  @keyframes rotating {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  .rotating {
+    animation: rotating 12s linear infinite;
+  }
+  @keyframes coloring {
+    0% {
+      fill: #fff;
+    }
+    35% {
+      fill: #ffda2a;
+    }
+    75% {
+      fill: #00d3b9;
+    }
+    100% {
+      fill: #fff;
+    }
+  }
+  .coloring {
+    animation: coloring 12s linear infinite;
+  }
+
+  
+  /* end  */

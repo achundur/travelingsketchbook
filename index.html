@@ -49,38 +49,87 @@
             </h3>
         </div>
 
+
+
+
+
         <!-- Images -->
         <div class="row h-100 flex-wrap">
             <div class="col-md-12">
-                <img src="images/2.png" onclick="openModal();currentSlide(2)" class="img-fluid sketchbook-page hover-shadow">
-                <img src="images/1.png" onclick="openModal();currentSlide(1)" class="img-fluid sketchbook-page hover-shadow">
-                <img src="images/3.png" onclick="openModal();currentSlide(3)" class="img-fluid sketchbook-page hover-shadow">
-                <img src="images/4.png" onclick="openModal();currentSlide(4)" class="img-fluid sketchbook-page hover-shadow">
-                <img src="images/Eileen_vol3_1.png" onclick="openModal();currentSlide(5)" class="img-fluid sketchbook-page hover-shadow">
-                <img src="images/Eileen_vol3_2.png" onclick="openModal();currentSlide(6)" class="img-fluid sketchbook-page hover-shadow">
-                <img src="images/Eileen_vol3_3.png" onclick="openModal();currentSlide(7)" class="img-fluid sketchbook-page hover-shadow">
-                <img src="images/eileen_vol2_1.png" onclick="openModal();currentSlide(8)" class="img-fluid sketchbook-page hover-shadow">
+                <img src="images/2.png" onclick="openModal();currentSlide(1)" class="img-fluid sketchbook-page hover-shadow">
+                <img src="images/1.png" onclick="openModal();currentSlide(2)" class="img-fluid sketchbook-page hover-shadow">
+                <img src="images/eileen_vol2_1.png" onclick="openModal();currentSlide(3)" class="img-fluid sketchbook-page hover-shadow">
+            </div>
+        </div>
+
+
+        <!-- Map -->
+        <div class="row h-100 flex-wrap">
+            <!-- empty column -->
+            <div class="col-md-2 filler"> </div> 
+            <div class="col-md-8 current-location-container">
+                <div class="row map">
+                    <div class="col-5 map">
+                        <div class="row">
+                            <h3 style="text-align: left; margin-top:40px; margin-left:40px;">Our sketchbook’s journey</h3>
+
+                        </div>
+
+                        <br>
+                        <div class="row flex-wrap">
+                            <h4 class="map-text"> <img src="images/Eileen Avatar copy.png" class="img-fluid avatar" > Eileen - California</h4>
+                            <h4 class="map-text"> <img src="images/Adhiti Avatar 1 copy.png" class="img-fluid avatar"> Adhiti - Ohio </h4>
+                            <h4 class="map-text"> <img src="images/Adhiti Avatar 2 copy.png" class="img-fluid avatar"> Adhiti - Washington *</h4>
+
+                        </div>
+                        <br>
+                        <div>
+                            <p style="font-size: smaller; font-style: italic;">* Adhiti moved from Ohio to Washington in the middle of this project</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-7 map">
+                        <img src="images/Map.png" class="img-fluid ">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- empty column -->
+            <div class="col-md-2 filler"> </div> 
+        </div>
+        <!-- End map-->
+        
+
+        <!-- Current Location -->
+        <div class="row h-100 flex-wrap">
+            <!-- empty column -->
+            <div class="col-md-2"> </div> 
+            <div class="col-md-8 current-location-container">
+                <span> <h3 class="current-location"><img src="Location pin.png" style="text-align: right; width:fit-content; padding-right:5px;">  Current Location: Washington - Adhiti</h3></span>
+            </div>
+            <!-- empty column -->
+            <div class="col-md-2"> </div> 
+        </div>
+        <!-- End current location -->
+
+
+
+        <div class="row h-100 flex-wrap">
+            <div class="col-md-12">
+                <img src="images/3.png" onclick="openModal();currentSlide(4)" class="img-fluid sketchbook-page hover-shadow">
+                <img src="images/4.png" onclick="openModal();currentSlide(5)" class="img-fluid sketchbook-page hover-shadow">
+                <img src="images/Eileen_vol3_1.png" onclick="openModal();currentSlide(6)" class="img-fluid sketchbook-page hover-shadow">
+                <img src="images/Eileen_vol3_2.png" onclick="openModal();currentSlide(7)" class="img-fluid sketchbook-page hover-shadow">
+                <img src="images/Eileen_vol3_3.png" onclick="openModal();currentSlide(8)" class="img-fluid sketchbook-page hover-shadow">
             </div>
 
         </div>
         
 
-        <!-- Images -->
-
-        <!-- <div class="row h-100 flex-wrap"> 
-            <div class="col-md-6">
-                <img src="images/1.png" onclick="openModal();currentSlide(1)" class="img-fluid sketchbook-page hover-shadow">
-
-            </div>
-            <img src="images/2.png" onclick="openModal();currentSlide(2)" class="img-fluid sketchbook-page center hover-shadow">
-            <img src="images/3.png" onclick="openModal();currentSlide(3)" class="img-fluid sketchbook-page hover-shadow">
-            <img src="images/4.png" onclick="openModal();currentSlide(4)" class="img-fluid sketchbook-page hover-shadow">
-            <img src="images/Eileen_vol3_1.png" onclick="openModal();currentSlide(5)" class="img-fluid sketchbook-page hover-shadow">
-            <img src="images/Eileen_vol3_2.png" onclick="openModal();currentSlide(6)" class="img-fluid sketchbook-page hover-shadow">
-            <img src="images/Eileen_vol3_3.png" onclick="openModal();currentSlide(7)" class="img-fluid sketchbook-page hover-shadow">
-            <img src="images/eileen_vol2_1.png" onclick="openModal();currentSlide(8)" class="img-fluid sketchbook-page hover-shadow">
-
-        </div> -->
 
 
        <!-- The Modal/Lightbox  -->
@@ -90,43 +139,45 @@
         
                 <div class="mySlides">
                     <div class="numbertext">1 / 8</div>
-                    <img src="images/1.png" style="width:80%">
-                </div>
-            
-                <div class="mySlides">
-                    <div class="numbertext">2 / 8</div>
                     <img src="images/2.png" style="width:80%">
                 </div>
             
                 <div class="mySlides">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/1.png" style="width:80%">
+                </div>
+            
+                <div class="mySlides">
                     <div class="numbertext">3 / 8</div>
-                    <img src="images/3.png" style="width:80%">
+                    <img src="images/eileen_vol2_1.png" style="width:80%">
                 </div>
             
                 <div class="mySlides">
                     <div class="numbertext">4 / 8</div>
-                    <img src="images/4.png" style="width:80%">
+                    <img src="images/3.png" style="width:80%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">5 / 8</div>
+                    <img src="images/4.png" style="width:80%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
                     <img src="images/Eileen_vol3_1.png" style="width:80%">
                 </div>
             
                 <div class="mySlides">
-                    <div class="numbertext">6 / 8</div>
+                    <div class="numbertext">7 / 8</div>
                     <img src="images/Eileen_vol3_2.png" style="width:80%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">7 / 8</div>
+                    <div class="numbertext">8 / 8</div>
                     <img src="images/Eileen_vol3_3.png" style="width:80%">
                 </div>
 
-                <div class="mySlides">
-                    <div class="numbertext">8 / 8</div>
-                    <img src="images/eileen_vol2_1.png" style="width:80%">
-                </div>
+
 
 
                 <!-- Next/previous controls -->
@@ -168,18 +219,20 @@
             </div>
         </div>
 
-  <!-- End Lightbox -->
+        <!-- End Lightbox -->
         
         <!-- About Section -->
         
         <hr>
+        <br>
+        <br>
 
         <div class="about">
             <h2> More about this project </h2>
             <p> 
                 Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod. 
-            Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod. 
-            Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod.  
+                Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod. 
+                Lorem ipsum dolor sit amet consectetur. Lectus tincidunt viverra tristique lectus lectus euismod.  
             </p>
 
         <div class="socials">
@@ -200,7 +253,7 @@
     
     <footer>
         <div>
-                    <h4>website made by © adhiti & eileen</h4>
+            <h4>website made by © adhiti & eileen</h4>
         </div>
 
     </footer>

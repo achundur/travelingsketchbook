@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chakra+Petch:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -82,12 +84,28 @@
 
         </div>
         
+        <!-- testing! -->
 
+        <div class="w3-container">
+            <h2>W3.CSS Modal</h2>
+            <p>In this example we demonstrate how to close the modal by clicking outside of the modal box.</p>
+          
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+          
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-card-4">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('id01').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>Modal Header</h2>
+                </header>
 
-       <!-- The Modal/Lightbox -->
-         <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
+                <div class="w3-container">
+                  <p>You have two options to close this modal:</p>
+                  <p>Click on the "x" or click anywhere outside of the modal!</p>
+                </div>
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-contentw3-container ">
         
                 <div class="mySlides">
                     <div class="numbertext">1 / 8</div>
@@ -166,8 +184,113 @@
 
 
 
+
+
+                <footer class="w3-container w3-teal">
+                  <p>Modal Footer</p>
+                </footer>
+             
             </div>
         </div>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+
+        <!-- testing ended! -->
+
+       <!-- The Modal/Lightbox  -->
+         <!-- <div id="myModal" class="modal w3-modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+                <div class="mySlides">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="images/1.png" style="width:80%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/2.png" style="width:80%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="images/3.png" style="width:80%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="images/4.png" style="width:80%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="images/Eileen_vol3_1.png" style="width:80%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/Eileen_vol3_2.png" style="width:80%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/Eileen_vol3_3.png" style="width:80%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="images/eileen_vol2_1.png" style="width:80%">
+                </div> -->
+
+
+                <!-- Next/previous controls -->
+                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+             -->
+                <!-- Caption text -->
+                <!-- <div class="caption-container">
+                    <p id="caption"></p>
+                </div> -->
+        
+                <!-- Thumbnail image controls -->
+                <!-- <div class="column">
+                    <img class="demo" style="width:40%" src="images/1_thumbnail.png" onclick="currentSlide(1)" alt="Don't Look">
+                    <img class="demo" style="width:40%" src="images/eileen_vol3_1_thumbnail.png" onclick="currentSlide(5)" alt="Knives">
+
+                </div>
+            
+                <div class="column">
+                    <img class="demo" style="width:40%" src="images/2_thumbnail.png" onclick="currentSlide(2)" alt="Sword">
+                    <img class="demo" style="width:40%" src="images/eileen_vol3_2_thumbnail.png" onclick="currentSlide(6)" alt="July 13 / My Neon pothos :] in a work meeting">
+
+                </div>
+            
+                <div class="column">
+                    <img class="demo" style="width:40%" src="images/3_thumbnail.png" onclick="currentSlide(3)" alt="Alice Neel @ the OCMA/CA">
+                    <img class="demo" style="width:40%" src="images/eileen_vol3_3_thumbnail.png" onclick="currentSlide(7)" alt="Knives">
+
+                </div>
+            
+                <div class="column">
+                    <img class="demo" style="width:40%" src="images/4_thumbnail.png" onclick="currentSlide(4)" alt="Knives">
+                    <img class="demo" style="width:40%" src="images/eileen_vol2_1_thumbnail.png" onclick="currentSlide(8)" alt="Knives">
+
+                </div>
+
+
+
+            </div>
+        </div> -->
 
   <!-- End Lightbox -->
         

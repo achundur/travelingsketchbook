@@ -9,6 +9,7 @@
     document.getElementById("myModal").style.display = "none";
     }
 
+
     // Get the modal
     var modal = document.getElementById('myModal');
     window.onclick = function(event) {
@@ -16,6 +17,8 @@
           modal.style.display = "none";
         }
       }
+    
+
 
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -47,4 +50,7 @@
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
     }
+
+
+
 

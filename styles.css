@@ -92,7 +92,12 @@ hr{
   border-radius: 3rem;
   font-family: Tiltortion;
   font-size: 1.5rem;
+  margin:0.5rem;
 
+}
+
+.btn-container{
+  text-align: start;
 }
 
 .map-text{

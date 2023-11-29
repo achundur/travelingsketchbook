@@ -4,20 +4,6 @@
 
 
 /* Custom Fonts */
-/* @font-face {
-    font-family: 'Tiltortion';
-    src: url('Tiltortion.woff2') format('woff2'),
-         url('Tiltortion.woff') format('woff');
-    src: url('webfont-tiltortion/Tiltortion.woff2') format('woff2'),
-         url('webfont-tiltortion/Tiltortion.woff') format('woff');
-    src: url('https://achundur.github.io/travelingsketchbook/webfonts-tiltortion/Tiltortion.woff2') format('woff2'),
-         url('https://achundur.github.io/travelingsketchbook/webfonts-tiltortion/Tiltortion.woff') format('woff');
-
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-} */
-
 
 
 @font-face {
@@ -94,6 +80,7 @@ p{
     /* font-size: 2.5rem;
     font-family: "Tiltortion"; */
     text-align:center;
+    color:#fc9cc4
 }
 
 hr{
@@ -101,10 +88,21 @@ hr{
     width: 100%;
 }
 
+.info-btn{
+  border-radius: 3rem;
+  font-family: Tiltortion;
+  font-size: 1.5rem;
+
+}
 
 .map-text{
     margin: bottom -10px;
     align-items: center;
+}
+
+#map-title{
+  font-family: "Tiltortion";
+  font-size:2.2rem;
 }
 
 /* BREAKPOINTS FOR HEADINGS */
@@ -145,6 +143,12 @@ img{
     flex-direction: column;
 }
 
+#location-pin{
+  padding:15px;
+  margin:10px;
+  width:40px;
+}
+
 .sticker{
   margin: auto;
 }
@@ -168,7 +172,10 @@ img{
     background-color:black;
     border-radius: 1rem;
     /* width:85%; */
-    margin: 10px 10px;
+    margin: 10px 20px;
+    padding:20px;
+    border-color:#ff4190;
+    border-width: 0.5rem;
   }
 
   .avatar{
@@ -177,7 +184,11 @@ img{
 
   .map{
     margin: auto;
+    padding:0.5rem;
   }
+
+
+
 /* Images end */
 
 footer{
@@ -190,8 +201,8 @@ footer{
 
 .about{
     /* width: 45%; */
-    margin: auto;
-    margin: top 30px;
+    margin: 30px;
+    /* margin: top 30px; */
 }
 
 .socials{
@@ -231,6 +242,15 @@ a:hover{
     .filler{
         display:none;
     }
+
+
+  .sketchbook-page{
+    width: 95%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: auto;
+
+  }
 }
 
 /* Text Marquee Styling */

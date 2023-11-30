@@ -336,11 +336,11 @@ a:hover{
   /* Modal Content */
   .modal-content {
     position: relative;
-    /* background-color: #ff419047; */
+    background-color: rgb(220, 220, 220);
     margin: auto;
     padding: 0;
     width: 90%;
-    max-width: 1000px;
+    /* max-width: 1000px; */
   }
   
   /* The Close Button */

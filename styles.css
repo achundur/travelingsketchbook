@@ -34,7 +34,15 @@ body{
     margin: auto;
     padding: auto;
     cursor: url('Heart-Cursor.png'), auto;
+
+
+    background-image: url('sky.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
+
+
 
 h1{
     color: white;
@@ -176,7 +184,7 @@ img{
   }
 
   .current-location-container{
-    background-color:black;
+    /* background-color:black; */
     border-radius: 1rem;
     /* width:85%; */
     margin: 10px 20px;
@@ -336,7 +344,7 @@ a:hover{
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(255, 255, 255);
     margin: auto;
     padding: 0;
     width: 90%;
@@ -404,10 +412,12 @@ a:hover{
   /* Number text (1/3 etc) */
   .numbertext {
     color: #000000;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 12px 12px;
     position: absolute;
     top: 0;
+    font-family: 'Tiltortion';
+    
   }
   
   /* Caption text */
